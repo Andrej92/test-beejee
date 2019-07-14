@@ -1,0 +1,11 @@
+.Home
+{
+  .Home__top
+  {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: end;
+    align-items: center;
+    grid-column-gap: 2rem;
+  }
+}

@@ -1,0 +1,41 @@
+.TaskList
+{
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: 2rem;
+  li
+  {
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 1rem;
+    border: .1rem solid #e5e5e5;
+    padding: 1.5rem;
+    -webkit-box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.08);
+    strong
+    {
+      font-size: 1.4rem;
+    }
+    p
+    {
+      font-size:  1.6rem;
+      margin: 0;
+
+    }
+    span
+    {
+      font-size: 1.4rem;
+    }
+    button
+    {
+      background: dodgerblue;
+      color: #fff;
+      padding: 1.2rem 2rem;
+      border: none;
+      display: inline-block;
+      max-width:20rem;
+      cursor: pointer;
+    }
+  }
+}

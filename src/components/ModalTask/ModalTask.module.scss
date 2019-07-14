@@ -1,0 +1,65 @@
+.ModalTask
+{
+  background: rgba(79,83,123,0.28);
+  position: fixed;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  display: grid;
+  align-items:center;
+  justify-content:center;
+  z-index:2000;
+  grid-template-columns: minmax(auto, 105rem);
+  .ModalTask__form
+  {
+    -webkit-box-shadow: 0 .3rem .6rem rgba(0,0,0,0.06);
+    -moz-box-shadow: 0 .3rem .6rem rgba(0,0,0,0.06);
+    box-shadow: 0 .3rem .6rem rgba(0,0,0,0.06);
+    background: #fff;
+    padding:3.1rem;
+    position: relative;
+    display: grid;
+    justify-self: center;
+    justify-content: center;
+    max-width:30rem;
+    strong
+    {
+      display: block;
+      margin-bottom:  2rem;
+      font-size: 2rem;
+    }
+    input
+    {
+      &:not([type="checkbox"]) {
+        padding: 1.2rem 2rem;
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+        width:  100%;
+      }
+    }
+    textarea
+    {
+      padding: 1.2rem 2rem;
+      width:  100%;
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+      min-height: 10rem;
+    }
+    button
+    {
+      background: dodgerblue;
+      color: #fff;
+      padding: 1.2rem 2rem;
+      border: none;
+      display: inline-block;
+      max-width:20rem;
+      cursor: pointer;
+      margin: 1rem 1rem 0 0;
+    }
+    p
+    {
+      font-size: 1.8rem;
+    }
+  }
+}

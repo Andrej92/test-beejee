@@ -1,0 +1,51 @@
+.Pagination
+{
+  padding: 2rem 0;
+  .Pagination__list
+  {
+    display: grid;
+    padding: 0;
+    margin: 0;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    grid-column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    .Pagination__break
+    {
+      color: dodgerblue;
+      font-size: 1.6rem;
+      list-style-type: none;
+      display: grid;
+      justify-content: center;
+    }
+    .Pagination__item,
+    .Pagination__previous,
+    .Pagination__next
+    {
+      list-style-type: none;
+      .Pagination__link
+      {
+        padding: 1.2rem 2rem;
+        background: dodgerblue;
+        color: #fff;
+        font-size: 1.6rem;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        -webkit-transition: all 0.25s;
+        -moz-transition: all 0.25s;
+        -ms-transition: all 0.25s;
+        -o-transition: all 0.25s;
+        transition: all 0.25s;
+        cursor:pointer;
+
+        &.Pagination__link_active,
+        &:hover
+        {
+          background: blue;
+        }
+      }
+    }
+  }
+}

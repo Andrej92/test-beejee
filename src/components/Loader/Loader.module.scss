@@ -1,0 +1,43 @@
+.Loader {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 50%;
+  margin-top:-2rem;
+  left:50%;
+  margin-left:-2rem;
+  border: 3px solid transparent;
+  border-top-color: #10C8D2;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-bottom-color: #10C8D2;
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+  &:before
+  {
+    content: '';
+    display: block;
+    width: 0.75em;
+    height: 0.75em;
+    border: 3px solid #10C8D2;
+    border-radius: 50%;
+    animation: pulse 1s alternate ease-in-out infinite;
+  }
+}
+
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
